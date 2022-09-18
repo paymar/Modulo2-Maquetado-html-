@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Mi Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!--link Boostrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!--link Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/d8834d7870.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <!--Navbar-->
+        <nav class="navbar fixed-top navbar-expand-md">
+            <div class="container-fluid d-flex align-items-center">
+                <a class="navbar-brand" >
+                    <!--Logo-->
+                    <img class="logoAP" src="IMAGENES/logo ArPro.png" alt="logo Argentina Programa" width="120em"  height="50em"></a>  
+                </a>
+                <!-- Botón del menú -->
+                <button class="navbar-toggler bg-light" type="button"  data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <!-- Elementos del menú colapsable -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-brands fa-facebook fa-xl"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-brands fa-instagram fa-xl"></i> 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-brands fa-github fa-xl"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-user-lock fa-xl" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                            </a>
+                        </li>
+                    </ul>   
+                </div>
+                
+            </div>         
+        </nav>
+        <!-- Sección Home-->
+        <section class="home">
+            <div class="container d-flex justify-content-center align-items-center">
+                    <div class="col-mb-6 text text-center">
+                            <img src="IMAGENES/profile.jpg" alt="Foto de perfil" class="col-md-4 img-fluid rounded-circle" >
+                    </div>  
+                    <div class="presentacion">
+                        <h2 class="col-mb-4">Hola...Soy...</h2>
+                        <h1 class="col-mb-4">Pablo Echegaray</h1>
+                        <h3 class="col-mb-4">Full Stack Developer Jr.</h3>
+                    </div>
+            </div>
+            
+        </section>
+
+    </header>
+      <!-- Modal -->
+      
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <button type="button" class="btn-close" name="button" data-bs-dismiss="modal"></button>
+                    <div class="wrapper">
+                        <div class="logo">
+                            <img src="IMAGENES/avatarLogin.jpg" alt="avatarLogin">
+                        </div>
+                        <form class="p-3 mt-3">
+                            <div class="form-field d-flex align-items-center">
+                                <span class="far fa-user"></span>
+                                <input type="text" name="userName" autocomplete="off" id="userName" placeholder="Usuario">
+                            </div>
+                            <div class="form-field d-flex align-items-center">
+                                <span class="fas fa-key"></span>
+                                <input type="password" name="password" id="pwd" placeholder="Contraseña">
+                            </div>
+                            <button class="btn mt-3">Iniciar Sesión</button>
+                        </form>
+                        <div class="text-center fs-6">
+                            <a href="#">Contraseña Olvidada?</a> o <a href="#">Registrarse</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>  
+    </div> 
+
+  
+       <!--Sección About-->
+        <section id="about" class="about">    
+            <div class="container">
+                <div class="titulo-seccion">
+                    <h2>Sobre Mi</h2>
+                    <p>Busco mejorar mis habilidades y seguir creciendo profesionalmente para poder hacer aportes valiosos en el grupo de trabajo, para aumentar la productividad y mejorar la comunicación dentro de nuestro equipo de desarrollo.</p>
+                  </div>
+            </div>
+        </section> 
+
+        <!--Sección Curriculum-->
+        <section id="curriculum" class="curriculum">
+            <div class="container">
+                <div class="titulo-seccion">
+                    <h2>Curriculum</h2>
+                </div>
+             
+                <div class="row">
+                       <!--Experiencia-->
+                    <div id="experiencia" class="col-lg-6">
+                        <h3 class="titulo">Experiencia Laboral</h3>
+                        <ul class="timeline">
+                            <li>
+                                <h4>Cabinas de Internet "San Luis"</h4>
+                                <h5>2001-2004</h5>
+                                <p>Encargado del mantenimiento preventivo y correctivo de computadoras e impresoras.</p>
+                            </li>
+                        </ul>
+                        <ul class="timeline">   
+                            <li>
+                                <h4>Librería Book Center</h4>
+                                <h5>2004</h5>
+                                <p>Atención al público. Promocionar y realizar la venta de los productos.</p>
+                            </li>
+                        </ul>
+                        <ul class="timeline">     
+                            <li>
+                                <h4>Albañilería</h4>
+                                <h5>2005-2007</h5>
+                                <p>Ayudante de albañilería en general</p>
+                            </li>
+                        </ul>
+                        <ul class="timeline">    
+                            <li>
+                                <h4>Constructora Nivelco SRL</h4>
+                                <h5>2007-2012</h5>
+                                <p>Pintura en general</p>
+                            </li>
+                        </ul>
+                        <ul class="timeline">    
+                            <li>
+                                <h4>Pintura</h4>
+                                <h5>2013-2022</h5>
+                                <p>Realización de trabajos de pintura en general</p>
+                            </li>    
+                        </ul>
+                    </div>
+                    <!--Educación-->
+                    <div id="educacion" class="col-lg-6">
+                        <h4 class="titulo">Educación</h4>
+                        <ul class="timeline">
+                            <li>
+                                <h4>Computación e Informática</h4>
+                                <h5>2001-2004"</h5>
+                                <p>Instituto de Educación Superior " San Eduardo" - ISE</p>     
+                            </li>
+                        </ul>
+                        <ul class="timeline">    
+                            <li>
+                                <h4>Reparación de PCs</h4>
+                                <h5>2010</h5>
+                                <p>Instituto AES</p>
+                            </li>
+                        </ul>
+                        <ul class="timeline">
+                            <li>
+                                <h4>Desarrollo Web y Aplicaciones Digitales</h4>
+                                <h5>2022</h5>
+                                <p>Instituto Superior Politécnico Córdoba - ISPC</p>
+                            </li>
+                        </ul>
+                        <ul class="timeline">    
+                            <li>
+                                <h4>Desarrollo Web Full Stack Jr - Yo Programo</h4>
+                                <h5>2022</h5>
+                                <p>Argentina Programa</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>      
+    
+        <!--Sección Skills-->
+        <section id="skils" class="skils">
+            <div class="container">
+                <div class="titulo-seccion">
+                    <h2>Skills</h2>
+                </div>
+                <div class="row">
+                    <!--front-end-->
+                    <div id="frontend" class="frontend col-md-4">
+                        <h3 class="titulo-skills">Front-End</h3>
+                        <h4 class="progress-title">
+                            <i class="fa-brands fa-html5"></i>
+                            HTML5 
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-orange" role="progressbar"  style="width:70%;"></div>
+                                <div class="progress-value"><span>40</span>%</div>
+                            </div>
+                        </div>
+                        <h4 class="progress-title">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            CSS3
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-blue" role="progressbar" style="width:50%;"></div>
+                                <div class="progress-value"><span>60</span>%</div>
+                            </div>
+                        </div>
+                        <h4 class="progress-title">
+                            <i class="fa-brands fa-square-js"></i>
+                            JAVASCRIPT
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-yellow" role="progressbar" style="width:50%;"></div>
+                                <div class="progress-value"><span>50</span>%</div>
+                            </div>
+                        </div>
+                        <h4 class="progress-title"> 
+                            <i class="fa-brands fa-bootstrap"></i>
+                            BOOSTRAP
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-purple" role="progressbar" style="width:50%;"></div>
+                                <div class="progress-value"><span>50</span>%</div>
+                            </div>
+                        </div>
+                        <h4 class="progress-title">
+                            <i class="fa-brands fa-angular"></i>
+                            ANGULAR - TYPESCRIPT
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-red" role="progressbar" style="width:50%;"></div>
+                                <div class="progress-value"><span>50</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--back end-->
+                    <div id="backend" class="backend col-md-4">
+                        <h3  class="titulo-skills"  class="titulo-skills">Back-End</h3>
+                        <h4 class="progress-title">
+                            <i class="fa-solid fa-database"></i>
+                            MYSQL
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-lightblue" role="progressbar"  style="width:70%;"></div>
+                                <div class="progress-value"><span>40</span>%</div>
+                            </div>
+                        </div>
+                        <h4 class="progress-title">
+                            <i class="fa-brands fa-java"></i>    
+                            SPRINT BOOT - JAVA
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-green" role="progressbar" style="width:50%;"></div>
+                                <div class="progress-value"><span>60</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                     <!--soft skills-->
+                        <div id="soft-skills" class="soft-skills col-md-4">
+                        <h3  class="titulo-skills">Soft-Skills </h3>
+                        <h4 class="progress-title">
+                            <i class="fa-solid fa-people-carry-box"></i>
+                            COLABORATIVO
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-green" role="progressbar"  style="width:70%;"></div>
+                                <div class="progress-value"><span>40</span>%</div>
+                            </div>
+                        </div>
+                        <h4 class="progress-title">
+                            <i class="fa-regular fa-comment-dots"></i>
+                            COMUNICATIVO
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-green" role="progressbar" style="width:50%;"></div>
+                                <div class="progress-value"><span>60</span>%</div>
+                            </div>
+                        </div>
+                        <h4 class="progress-title">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            AUTODIDACTA
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-green" role="progressbar" style="width:50%;"></div>
+                                <div class="progress-value"><span>60</span>%</div>
+                            </div>
+                        </div>
+                        <h4 class="progress-title">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            EMPATICO
+                        </h4>
+                        <div class="progress-outer">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-green" role="progressbar" style="width:50%;"></div>
+                                <div class="progress-value"><span>60</span>%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección Proyectos-->
+        <section id="proyectos" class="proyectos">
+            <div class="container">
+                <div class="titulo-seccion">
+                    <h2>Proyectos</h2>
+                </div>
+            </div>
+        </section>      
+
+     <!--Footer-->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="first">
+                            <img class="logoAP" src="IMAGENES/logo ArPro.png" alt="Logo Argentina Programa" width="180px"  height="80px"></a> 
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-xs-12">
+                        <div class="second">
+                            <h4> Home</h4>
+                            <ul>
+                                <li><a href="#">Sobre Mi</a></li>
+                                <li><a href="#">Educación</a></li>
+                                <li><a href="#">Experiencia</a></li>
+                                <li><a href="#">Skills</a></li>
+                                <li><a href="#">Proyectos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 col-xs-12">
+                        <div class="third">
+                            <h4> Contacto</h4>
+                            <ul>
+                              <li>Pablo Echegaray Chávez </li>
+                                <li></li>
+                              <li><i class="far fa-envelope"></i> paymar_01@hotmail.com</li>
+                                <li><i class="far fa-envelope"></i> paymar0799@gmail.com</li>
+                              <li><i class="fas fa-map-marker-alt"></i> Córdoba, Argentina </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="line"></div>
+                        <div class="second2">
+                            <a href="#"> <i class="fa-brands fa-facebook fa-2x margin"></i></a>
+                            <a href="#"> <i class="fa-brands fa-github fa-2x margin"></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram fa-2x margin"></i></a>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+        </div>
+    </footer>
+
+            
+     <!--link JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+</body>
+
+</html>
